@@ -2,36 +2,60 @@
     background-image: url('../../public/assets/foto20.jpg');
     background-size: cover;
     background-position: 50%;
+}
+.container {
     height: 800px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.slogan{
-
-    
-    height: 700px;
-    position: relative;
-
-}
 .text{
     background: rgba(255, 255, 255, 0.507);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 80%;
-	height: 120px; 
-	margin-top: -60px; /* Este valor es el resultado de dividir entre 2 height: 70*/
-	margin-left: -40%; /* Este valor es el resultado de dividir entre 2 : width:80% */
-	text-align: center;
+    max-width: 1200px;
     color: purple;
-
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.slogan h1{
-    font-size: 3rem;
+.text h1{
+    font-size: 2.5rem;
 }
-.slogan h3{
+.text h3{
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.mobileNavigation{
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .heroSection{
+        height: 400px;
+    }
+
+.container{
+    height: 300px; 
+}
+
+.text{
+    background: none;
+    color: purple;
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.8);
+}
+.text h1{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.text h3{
+    font-size: 1rem;
+    text-align: center;
+}
 }
 
 
