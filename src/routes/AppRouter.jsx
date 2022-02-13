@@ -11,13 +11,13 @@ import Trayectoria from '../pages/Trayectoria';
 import QuienesSomos from '../pages/QuienesSomos';
 
 import NotFound from '../pages/NotFound';
+import { Header } from '../components/Header';
 
 
 const AppRouter = () => {
     return (
         <Router>
-            <Navbar/>
-
+            <Header/>
             <Routes>
                 <Route end path="/" element={<Inicio />}/>
                 <Route end path="/inmuebles" element={<Inmuebles />}/>

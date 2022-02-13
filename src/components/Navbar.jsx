@@ -1,31 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css'
+
 
 const Navbar = () => {
-  return <header>
-      <div>
-          <img src="../assets/bonpland.jfif" alt="logo"/>
-          <nav>
-              <ul>
+  return ( 
+        <header>
+          <nav className='navbar'>
+                  <div className="navbar-logo">
+                        <img src="../assets/logo_ilustrator.png" alt="logo"/>
+                  </div>
+              <ul className='nav-menu'>
                   <li>
-                        <NavLink to="/">Inicio</NavLink>
+                        <NavLink className='nav-links' to="/">Inicio</NavLink>
                   </li>
                   <li>
-                        <NavLink to="/inmuebles">Inmuebles</NavLink>
+                        <NavLink className='nav-links' to="/inmuebles">Inmuebles</NavLink>
                   </li>
                   <li>
-                        <NavLink to="/contacto">Contacto</NavLink>  
+                        <NavLink className='nav-links' to="/contacto">Contacto</NavLink>  
                   </li>
                   <li>
-                        <NavLink to="/nuestra-trayectoria">Nuestra Trayectoria</NavLink>
+                        <NavLink className='nav-links' to="/nuestra-trayectoria">Nuestra Trayectoria</NavLink>
                   </li>
                   <li>
-                        <NavLink to="/quienes-somos">Quienes Somos</NavLink>
+                        <NavLink className='nav-links' to="/quienes-somos">Quienes Somos</NavLink>
                   </li>
               </ul>
           </nav>
-      </div>
-  </header>;
-};
+          </header>
+
+  )};
 
 export default Navbar;

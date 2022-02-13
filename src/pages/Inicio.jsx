@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './Inicio.css'
 const Inicio = () => {
-  return <div>
-      <h1>Esta es la página de inicio</h1>
+  return <div className='container'>
+      <h1 className='inicio'>Esta es la página de inicio</h1>
   </div>;
 };
 
