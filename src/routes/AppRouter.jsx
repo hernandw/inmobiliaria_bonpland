@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 import Inicio from '../pages/Inicio';
@@ -11,13 +10,13 @@ import Trayectoria from '../pages/Trayectoria';
 import QuienesSomos from '../pages/QuienesSomos';
 
 import NotFound from '../pages/NotFound';
+import { Header } from '../components/Header';
 
 
 const AppRouter = () => {
     return (
         <Router>
-            <Navbar/>
-
+            <Header/>
             <Routes>
                 <Route end path="/" element={<Inicio />}/>
                 <Route end path="/inmuebles" element={<Inmuebles />}/>

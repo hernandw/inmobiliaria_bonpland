@@ -1,0 +1,80 @@
+.footerContainer{
+    max-width: 1360px;
+    margin: 0 auto;
+    background-color: #404242;
+    color: #fff;
+}
+
+.footerContainer > div {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.2em;
+}
+
+.footerColumn {
+    width: 40%;
+    align-content: center;
+}
+
+.footerColumn > h2, .footerColumn > p {
+    text-align: center;
+    margin: 0.75em 1.1em;
+}
+
+.footerColumn > a, .pLink {
+    text-decoration: none;
+}
+
+.footerColumn > a:visited, .pLink:visited {
+    color: #fff;
+}
+
+.footerColumn > a:hover, .pLink:hover {
+    color: #953f99;
+}
+
+.columnLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footerLogo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.textCopyrigth {
+    background-color: #202020;
+    text-align: center;
+    color: #aeb0ab;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.textCopyrigth > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    .footerContainer > div {
+        flex-direction: column;
+    }
+
+    .footerColumn {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 435px) {
+    .footerColumn {
+        width: 90%;
+    }
+}
